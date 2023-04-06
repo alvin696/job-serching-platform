@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Job Search Platform</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Job Search Platform</h1>
+		<form id="job-search-form">
+			<div class="input-field">
+				<input id="job-search-input" type="text" placeholder="Enter a job title or keyword">
+				<label for="job-search-input">Search for jobs</label>
+			</div>
+			<div class="input-field">
+				<input id="location-input" type="text" placeholder="Enter a city or zip code">
+				<label for="location-input">Location</label>
+			</div>
+			<button class="btn waves-effect waves-light" type="submit" name="action">Search
+				<i class="material-icons right">search</i>
+			</button>
+		</form>
+		<ul id="job-listings" class="collection"></ul>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
