@@ -3,10 +3,51 @@
 <head>
   <title>Job searching platform</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="index.js"></script>
 </head>
 <body>
   <h1>Job Portal</h1>
+
+  <!-- HTML form for user registration -->
+  <form id="registration-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <label for="years">Years of Experience</label>
+    <input type="number" id="years" name="years">
+    <label for="degree">Qualifications (Degree)</label>
+    <input type="text" id="degree" name="degree">
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- HTML form for user login -->
+  <form id="login-form">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- HTML form for job creation -->
+  <form id="job-form">
+    <label for="title">Job Title</label>
+    <input type="text" id="title" name="title">
+    <label for="description">Job Description</label>
+    <input type="text" id="description" name="description">
+    <button type="submit">Create Job</button>
+  </form>
+
+  <!-- HTML template for displaying job details -->
+  <div id="job-details-template" style="display: none;">
+    <h2 id="job-title"></h2>
+    <p id="job-description"></p>
+    <button id="like-button">Like</button>
+    <button id="apply-button">Apply</button>
+  </div>
+
+  <!-- HTML template for displaying job list -->
+  <div id="job-list" class="job-list"></div>
+
+  <!-- Existing code for login and job search -->
   <h2>Login</h2>
   <form id="loginForm" action="/login" method="post">
     <label for="username">Username:</label>
@@ -15,7 +56,7 @@
     <input type="password" id="password" name="password" required>
     <button type="submit">Login</button>
   </form>
-  
+
   <h2>Search Job</h2>
   <form id="createJobForm" action="/searchJob" method="post">
     <label for="jobTitle">Job Title:</label>
@@ -26,8 +67,16 @@
     <button type="submit">Search Job</button>
   </form>
   <button onclick="authorizeWithIndeed()">Authorize with Indeed</button>
+
+  <!-- HTML template for displaying job recommendations -->
+  <div id="job-recommendations">
+    <h2>Job Recommendations</h2>
+    <ul id="recommendation-list"></ul>
+  </div>
+  <!-- Move scripts to end of the body -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="app.js"></script>
+  <script src="index.js"></script>
+  <script src="server.mjs"></script>
 </body>
 </html>
-
-

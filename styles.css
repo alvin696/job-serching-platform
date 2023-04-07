@@ -2,11 +2,34 @@
 
 /* Set background image for body */
 body {
-  background-image: url('images/stefan-stefancik-pzA7QWNCIYg-unsplash.jpg'); /* Update file path */
+  background-image: url('images/sepp-rutz-tskqMngoHSA-unsplash.jpg'), url('images/shannon-tremaine-NRz7SfpnqUM-unsplash.jpg'), url('images/stefan-stefancik-pzA7QWNCIYg-unsplash.jpg'); /* Update file paths with actual image file names */
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center, center center, center center; /* Set background position for each image */
+  /* Add the following lines to apply the images as a slideshow with a 10-second duration */
+  animation-name: slideshow;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
+/* Define the keyframes for the slideshow animation */
+@keyframes slideshow {
+  0% {
+    background-image: url('images/sepp-rutz-tskqMngoHSA-unsplash.jpg');
+  }
+  33% {
+    background-image: url('images/shannon-tremaine-NRz7SfpnqUM-unsplash.jpg');
+  }
+  66% {
+    background-image: url('images/stefan-stefancik-pzA7QWNCIYg-unsplash.jpg');
+  }
+  100% {
+    background-image: url('images/sepp-rutz-tskqMngoHSA-unsplash.jpg');
+  }
+}
+
+/* Rest of the CSS styles */
 /* Style for h1 heading */
 h1 {
   font-size: 36px;
@@ -60,3 +83,38 @@ button[onclick="authorizeWithIndeed()"] {
 }
 
 /* Additional styles for your app as needed */
+
+/* CSS for job list */
+.job-list {
+  margin-top: 20px;
+}
+
+.job-list h2 {
+  margin-bottom: 5px;
+}
+
+.job-list p {
+  margin-top: 0;
+}
+
+/* CSS for job details */
+#job-details-template {
+  display: none;
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#job-details-template h2 {
+  margin-bottom: 5px;
+}
+
+#job-details-template p {
+  margin-top: 0;
+}
+
+#job-details-template button {
+  margin-top: 10px;
+}
+

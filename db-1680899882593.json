@@ -1,0 +1,88 @@
+{
+  "jobSearches": [
+    {
+      "id": 1,
+      "position": "Software Engineer",
+      "location": "San Francisco, CA",
+      "salary": "$120,000 - $150,000",
+      "company": "Google",
+      "postedDate": "2022-10-01",
+      "expirationDate": "2022-11-01"
+    },
+    {
+      "id": 2,
+      "position": "Data Analyst",
+      "location": "New York, NY",
+      "salary": "$80,000 - $100,000",
+      "company": "Amazon",
+      "postedDate": "2022-09-15",
+      "expirationDate": "2022-10-15"
+    },
+    {
+      "id": 3,
+      "position": "Accountant",
+      "description": "We are looking for a detail-oriented accountant to join our team and help us manage our financial records.",
+      "company": "MNO Accounting",
+      "location": "Boston, MA",
+      "salary": 85000
+    },
+    {
+      "id": 4,
+      "position": "Human Resources Manager",
+      "description": "We are seeking an experienced HR manager to oversee our company's human resources operations.",
+      "company": "PQR Corporation",
+      "location": "Atlanta, GA",
+      "salary": 110000
+    },
+    {
+      "id": 5,
+      "position": "Sales Representative",
+      "description": "We are seeking an enthusiastic sales representative to join our team and help us sell our products and services.",
+      "company": "JKL Sales",
+      "location": "Seattle, WA",
+      "salary": 90000
+    },
+    {
+      "id": 6,
+      "position": "Product Manager",
+      "description": "We are looking for an experienced product manager to lead our product development efforts.",
+      "company": "STU Products",
+      "location": "Austin, TX",
+      "salary": 130000
+    },
+    {
+      "id": 7,
+      "position": "Customer Service Representative",
+      "description": "We are seeking a friendly and outgoing customer service representative to assist our customers.",
+      "company": "VWX Services",
+      "location": "Miami, FL",
+      "salary": 60000
+    },
+    {
+      "id": 8,
+      "position": "Web Developer",
+      "description": "We are looking for a talented web developer to join our team and help us build beautiful and functional websites.",
+      "company": "YZ Web",
+      "location": "Denver, CO",
+      "salary": 95000
+    },
+    {
+      "id": 9,
+      "position": "Graphic Designer",
+      "description": "We are looking for a creative graphic designer to join our team and help us design compelling visual content.",
+      "company": "GHI Creative",
+      "location": "Los Angeles, CA",
+      "salary": 70000
+    },
+    {
+      "id": 10,
+      "position": "UX Designer",
+      "location": "Chicago, IL",
+      "salary": "$90,000 - $110,000",
+      "company": "Facebook",
+      "postedDate": "2022-09-01",
+      "expirationDate": "2022-10-01"
+    }
+  ],
+  "characters": []
+}
